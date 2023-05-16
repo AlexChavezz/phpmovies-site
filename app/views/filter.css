@@ -1,0 +1,152 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(14, 18, 45);
+    background: linear-gradient(177deg, rgba(14, 18, 45, 1) 5%, rgba(50, 79, 137, 1) 100%);
+}
+
+header {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+header .header-sesion {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    padding: 20px 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.form-container {
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 50px;
+}
+
+#country-select {
+    margin-right: 100px;
+}
+
+label {
+    color: #fff;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    width: 200px;
+    max-width: 100%;
+    color: #fff;
+}
+
+option {
+    color: #000;
+}
+
+select:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+input[type="submit"] {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005ea6;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+table 
+{
+    border: 1px oldlace solid;
+    color: #fff;
+    padding: 10px;
+    width: 1000px;
+}
+table td, th {
+    padding: 5px;
+}
+
+.arrow-control {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    right: 100px;
+    margin: auto;
+}
+.arrow{
+    font-size:2rem;
+    color: #fff;
+    text-decoration: none;
+}
+.arrow-right {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
