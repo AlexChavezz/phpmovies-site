@@ -20,7 +20,7 @@
                 <a href="./">
                     Home
                 </a>
-                <a href="./app/views/catalog">
+                <a href="./catalog">
                     Catalogo
                 </a>
                 <a href="./app/views/filter">

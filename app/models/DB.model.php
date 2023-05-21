@@ -2,11 +2,11 @@
     class Db
     {
         protected $host='localhost';
-        protected $dbname='PELICULAS';
+        protected $dbname='peliculas';
         protected $username='alexis';
         protected $password='';
-
-        public function connect()
+        protected $db;
+        public function open()
         {
             try {
                 $db = new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->username, $this->password);
@@ -14,6 +14,10 @@
             } catch (PDOException $e) {
                 echo $e->getMessage();
             }
+        }
+        public function close()
+        {
+            $db = null;
         }
     }
 ?>
