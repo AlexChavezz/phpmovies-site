@@ -32,24 +32,45 @@
                 Inicia Sesion
             </button>
         </header>
-
-        <table>
-        <thead>
-            <tr>
-                <th>id</th>
-                <th>nombre</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach($movies as $movie): ?>
-                <tr>
-                    <td><?php echo $movie['pelicula_id']; ?></td>
-                    <td><?php echo $movie['nombre']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-
+        <section>
+            <h3>
+                TOTAL DE PELICULAS: <?php echo $movies_length; ?>
+            </h3>
+        </section>
+        <section class="movies-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Duracion</th>
+                        <th>Año</th>
+                        <th>Pais</th>
+                        <th>Clasificacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($movies as $movie): ?>
+                        <tr>
+                            <td><?php echo $movie['pelicula_id']; ?></td>
+                            <td><?php echo $movie['nombre']; ?></td>
+                            <td><?php echo $movie['duracion']; ?></td>
+                            <td><?php echo $movie['año']; ?></td>
+                            <td><?php echo $movie['pais']; ?></td>
+                            <td><?php echo $movie['clasificacion']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </section>
+        <section class="arrow-control">
+            <?php if ($current_page > 1): ?>
+                <a href="?page=<?php echo $current_page-1; ?>" class="arrow"> &lt; </a>
+            <?php endif; ?>
+            <?php if (count($movies) == $records_per_page): ?>
+                <a href="?page=<?php echo $current_page+1; ?>" class="arrow"> &gt; </a>
+            <?php endif; ?>
+        </section>
     </main>
 </body>
 </html>

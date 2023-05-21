@@ -23,7 +23,7 @@
                 <a href="./catalog">
                     Catalogo
                 </a>
-                <a href="./app/views/filter">
+                <a href="/filter">
                     Busqueda
                 </a>
                 <a href="#">
